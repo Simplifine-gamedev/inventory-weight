@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "inventory-weight",
+  "version": "1.0.0",
+  "name": "Inventory Weight",
+  "description": "Your movement speed is affected by inventory weight",
+  "authors": ["ali77sina"],
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.orca.inventoryweight.InventoryWeight"],
+    "client": ["com.orca.inventoryweight.InventoryWeightClient"]
+  },
+  "mixins": ["inventory-weight.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  }
+}
